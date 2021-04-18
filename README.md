@@ -1,3 +1,3 @@
 ### Armaggedon
 
-Try it: https://pandreyk.github.io/giphymark/
+Try it: https://armaggedon-pi.vercel.app/
