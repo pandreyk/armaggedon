@@ -1,0 +1,10 @@
+.inputList {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 2rem;
+
+  input[type='text'] {
+    border-radius: 3px;
+    border: 1px solid #000;
+  }
+}

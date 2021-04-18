@@ -1,0 +1,153 @@
+$linearGreen: linear-gradient(90deg, #cff37d 0%, #7de88c 100%);
+$linearDanger: linear-gradient(90deg, #ffb199 0%, #ff0844 100%);
+
+.card {
+  position: relative;
+  background: $linearGreen;
+  display: flex;
+  height: 200px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 0 0 1rem;
+  overflow: hidden;
+
+  > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.danger {
+  background: $linearDanger;
+}
+
+.images {
+  position: relative;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.5rem 0 2.5rem 1.25rem;
+
+  &.danger {
+    background: none;
+  }
+
+  .asteroid {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    z-index: 0;
+
+    div {
+      position: absolute;
+    }
+  }
+
+  .dino {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+
+    svg {
+      width: 56px;
+      height: 48px;
+    }
+  }
+}
+
+.info {
+  flex: 5;
+  flex-direction: column;
+  z-index: 1;
+  padding: 1.25rem 0;
+
+  .name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    padding: 0 0 0.75rem 0;
+  }
+
+  > div {
+    padding: 0 0 0 1rem;
+  }
+}
+
+.verdict {
+  flex: 3;
+  flex-direction: column;
+  padding: 2.5rem 1.25rem 2.5rem 0;
+
+  .grade {
+    text-align: center;
+    line-height: 22px;
+    margin: 0 0 10px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+  .button {
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .asteroid {
+    div {
+      left: auto !important;
+    }
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .card {
+    flex-direction: column;
+    background: none;
+    height: auto;
+  }
+
+  .images {
+    background: $linearGreen;
+    height: 10rem;
+    padding: 0 0 0 1rem;
+
+    &.danger {
+      background: $linearDanger;
+    }
+
+    .dino {
+      right: 0.5rem;
+      bottom: 0;
+      transform: scale(-1, 1);
+
+      svg {
+        width: 35px;
+        height: 30px;
+      }
+    }
+
+    .asteroid {
+      width: 40%;
+    }
+  }
+
+  .info {
+    padding: 0.5rem 1rem;
+    position: relative;
+    .name {
+      position: absolute;
+      top: -2.5rem;
+      padding: 0;
+    }
+  }
+
+  .verdict {
+    padding: 0.25rem 0 1.25rem;
+  }
+}

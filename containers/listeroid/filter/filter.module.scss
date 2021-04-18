@@ -1,0 +1,30 @@
+.filter {
+  margin: 0 0 1.5rem;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .distance {
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+
+      &.selected {
+        font-weight: bold;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .filter {
+    flex-direction: column;
+  }
+
+  .distance {
+    margin: 1rem 0 0;
+  }
+}

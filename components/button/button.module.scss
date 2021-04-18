@@ -1,0 +1,18 @@
+.button {
+  background: #186dd6;
+  color: #fff;
+  border-radius: 24px;
+  padding: 14px 16px;
+  align-self: center;
+  text-align: center;
+  cursor: pointer;
+
+  &.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

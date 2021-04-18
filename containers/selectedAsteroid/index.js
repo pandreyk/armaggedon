@@ -1,0 +1,1 @@
+export { SelectedAsteroid } from './selectedAsteroid';

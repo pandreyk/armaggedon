@@ -1,0 +1,41 @@
+.layout {
+  display: flex;
+  justify-content: center;
+}
+
+.layout_container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 920px;
+  min-width: 300px;
+  min-height: 100vh;
+  // background-color: lightcoral;
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layout_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .layout_container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .layout_container {
+    width: 90%;
+  }
+}

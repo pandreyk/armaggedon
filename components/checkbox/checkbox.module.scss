@@ -1,0 +1,29 @@
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  .icon {
+    // сама иконка имеет отступы, которе не нужны
+    // лечим это абсолютным позиционирование
+    position: absolute;
+    left: -5px;
+    display: flex;
+    font-size: 28px;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 0 26px;
+    cursor: pointer;
+
+    // -webkit-touch-callout: none; /* iOS Safari */
+    // -webkit-user-select: none; /* Chrome/Safari/Opera */
+    // -khtml-user-select: none; /* Konqueror */
+    // -moz-user-select: none; /* Firefox */
+    // -ms-user-select: none; /* Internet Explorer/Edge */
+    // user-select: none;
+  }
+}

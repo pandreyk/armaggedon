@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25em 0;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 36px;
+    padding: 0 0 8px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 400px;
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: black;
+  margin: 0 0 1.5em;
+}
+
+@media screen and (max-width: 728px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .info {
+    margin: 0 0 0.75rem;
+  }
+
+  .line {
+    height: 1px;
+    background-color: black;
+    margin: 0 0 0.75rem;
+  }
+}
