@@ -9,7 +9,6 @@ export const useAsteroid = (serverData, id) => {
         response.json(),
       );
 
-      console.log('asteroid', asteroid);
       setData(asteroid);
     }
   }, []);

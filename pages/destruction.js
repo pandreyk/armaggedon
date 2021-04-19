@@ -15,7 +15,7 @@ function Destruction() {
       {destructionList ? (
         <Listeroid data={destructionList} isDistruction />
       ) : (
-        'loader'
+        <p>Нет целей на уничтожение!</p>
       )}
     </Layout>
   );

@@ -8,7 +8,6 @@ export const useAsteroids = (serverData) => {
 
   const fetchAsteroids = ({ date }) => {
     const dateFormatted = date.toISOString().slice(0, 10);
-    console.log('dateFormatted', dateFormatted);
 
     return fetch(
       `/api/asteroids?start_date=${dateFormatted}&end_date=${dateFormatted}`,

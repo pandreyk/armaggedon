@@ -75,14 +75,18 @@ export const DestructionButton = ({ data, isDistruction, setRemoved }) => {
         onClick={isDistruction ? destroy : addToListDestruction}
       />
 
-      <div className={`${styles.squad} ${anim && styles.anim}`}>
-        <img src="./squad.jpg" />
-      </div>
+      {isDistruction && (
+        <>
+          <div className={`${styles.squad} ${anim && styles.anim}`}>
+            <img src="./squad.jpg" />
+          </div>
 
-      <div className={`${styles.chris} ${anim && styles.anim}`}>
-        <img src="./chris.jpg" />
-        <span>Корбен, детка, спаси нас!</span>
-      </div>
+          <div className={`${styles.chris} ${anim && styles.anim}`}>
+            <img src="./chris.jpg" />
+            <span>Корбен, детка, спаси нас!</span>
+          </div>
+        </>
+      )}
     </div>
   );
 };
