@@ -21,6 +21,10 @@ export const Listeroid = ({ data, next, isDistruction = false }) => {
     setFilteredData(removedDestroyed);
   }, [data]);
 
+  useEffect(() => {
+    setFilteredData(selectedData);
+  }, [selectedData]);
+
   return (
     <>
       <Filter

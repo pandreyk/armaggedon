@@ -18,8 +18,6 @@ export const useAsteroids = (serverData) => {
       );
   };
 
-  console.log('startDate', startDate);
-
   useEffect(async () => {
     if (!serverData) {
       const asteroids = await fetchAsteroids({
